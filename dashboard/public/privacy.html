@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Privacy Policy · Consumer Intelligence Lab</title>
+<link rel="icon" href="./icon-192.png">
+<style>
+  :root { --bg: #0b0e14; --panel: #121722; --ink: #e8ecf4; --muted: #9aa4b6; --line: #232a39; --accent: #5ee6d0; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f6f7fb; --panel: #fff; --ink: #141a26; --muted: #5b6577; --line: #e2e6ef; --accent: #0f9b86; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.65 system-ui, -apple-system, Segoe UI, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin-top: 20px; }
+  code { font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Consumer Intelligence Lab dashboard and the "Consumer Intelligence Lab Connector" Chrome extension · Effective November 3, 2026</p>
+
+  <div class="card"><b>In one sentence:</b> your data stays on your device. It is analyzed inside your own browser tab, and nothing is sent to the developer or to anyone else.</div>
+
+  <h2>What the extension accesses</h2>
+  <ul>
+    <li><b>Browsing history</b> (<code>history</code>, an optional permission). It is read only after you click <i>Approve</i> and accept Chrome's prompt, and only for the period you choose (up to 365 days).</li>
+    <li><b>Product details from a page you choose</b> (<code>activeTab</code>, <code>scripting</code>). Only when you click <i>Capture this product</i> in the popup, the extension reads the page's product name, link, and the price and image if the page publishes them.</li>
+  </ul>
+  <p>It never reads passwords, cookies, form contents, page text, or your browsing outside those two actions.</p>
+
+  <h2>Where the data goes</h2>
+  <ul>
+    <li>History is passed directly to the open dashboard tab (<code>thomascaruso.github.io/consumer-intel-lab</code>) in the same browser, where it is analyzed by code running locally.</li>
+    <li>Before transfer, credential-like URL parameters (tokens, authorization codes, session IDs) are removed.</li>
+    <li>No data is sent to any server, AI model or API, analytics service, or advertiser. The website is static files with no backend, cookies, or trackers.</li>
+    <li>One exception to be aware of: product images on the Recommendations page are loaded from the retailer's own image server, as any web page would load them (with no referrer). No profile data is attached to those requests.</li>
+  </ul>
+
+  <h2>What is stored</h2>
+  <ul>
+    <li>Raw history and imported files are kept <b>in memory only</b> and are discarded when you close the tab.</li>
+    <li>Your accuracy feedback, captured or imported product details, and theme choice are saved in your browser's local storage so they persist between visits. Captured products are also kept in the extension's local storage.</li>
+  </ul>
+
+  <h2>Sensitive categories</h2>
+  <p>Records related to health, religion, politics, or sexuality are excluded before analysis, and those categories are never inferred.</p>
+
+  <h2>Sharing and selling</h2>
+  <p>Data is never sold, shared, or transferred to third parties, and it is not used for advertising, creditworthiness, or any purpose other than showing you your own profile.</p>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li><b>Disconnect</b> on the dashboard revokes the history permission.</li>
+    <li><b>Data &amp; Privacy → Reset dashboard</b> deletes everything the dashboard stored.</li>
+    <li>Removing the extension at <code>chrome://extensions</code> deletes its stored data.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>This is a student project for a Digital Marketing course. For questions, open an issue at <a href="https://github.com/ThomasCaruso/consumer-intel-lab/issues">github.com/ThomasCaruso/consumer-intel-lab</a>.</p>
+
+  <p class="muted"><a href="./">← Back to the dashboard</a></p>
+</main>
+</body>
+</html>

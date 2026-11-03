@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Connect Chrome history · Consumer Intelligence Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body class="page">
+  <main class="card">
+    <div class="brand"><img src="icons/icon48.png" alt="" width="36" height="36" /> Consumer Intelligence Lab</div>
+    <h1>Allow your dashboard to read your Chrome history?</h1>
+    <p class="lead">Chrome will ask you to confirm. You can switch this off at any time.</p>
+
+    <section class="grid">
+      <div>
+        <h2>What is read</h2>
+        <ul>
+          <li>Page addresses (URLs) and page titles you visited</li>
+          <li>When each visit happened</li>
+          <li>Only for the period you pick on the dashboard (max 365 days)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>What is never read</h2>
+        <ul>
+          <li>Passwords, cookies, or sign-in tokens</li>
+          <li>Page contents, form entries, or downloads</li>
+          <li>Login/session parameters (stripped from URLs)</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="note">
+      History is handed only to your own dashboard page and analyzed <b>inside your browser</b>.
+      It is not uploaded to any server, AI service, or analytics tool, and it is not saved after you close the tab.
+    </div>
+
+    <div class="actions">
+      <button id="allow" class="primary">Allow history access</button>
+      <button id="cancel">Not now</button>
+    </div>
+    <p id="msg" class="msg" role="status"></p>
+  </main>
+  <script src="connect.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body class="popup">
+  <div class="brand"><img src="icons/icon32.png" alt="" width="22" height="22" /> CI Lab Connector</div>
+  <div class="row"><span>History access</span><b id="hist">…</b></div>
+  <div class="row"><span>Captured products</span><b id="count">…</b></div>
+  <button id="capture" class="primary">Capture product on this page</button>
+  <p id="cap" class="msg"></p>
+  <button id="open">Open my dashboard</button>
+  <button id="toggle"></button>
+  <p class="fine">Capture reads the product name, price, and image this page publishes for search engines (schema.org data), and only when you click. Nothing is sent anywhere except your own dashboard.</p>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

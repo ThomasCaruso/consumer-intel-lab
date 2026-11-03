@@ -1,0 +1,19 @@
+# dependencies & builds
+node_modules/
+dist/
+*.tsbuildinfo
+
+# generated extension packages (built by scripts/pack-extension.mjs and in CI)
+*.zip
+
+# NEVER commit personal data exports
+data/
+*.csv
+BrowserHistory.json
+MyActivity.*
+conversations.json
+Takeout/
+e2e-shots/
+
+.DS_Store
+Thumbs.db

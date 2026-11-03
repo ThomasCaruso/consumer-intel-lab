@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Consumer Intelligence Lab Connector",
+  "short_name": "CI Lab",
+  "version": "1.0.0",
+  "description": "Lets your own Consumer Intelligence Lab dashboard read your Chrome history on your device, only after you approve it.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Consumer Intelligence Lab",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "optional_permissions": ["history"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://thomascaruso.github.io/consumer-intel-lab/*",
+        "http://localhost:5173/*",
+        "http://127.0.0.1:5173/*",
+        "http://localhost:4173/*",
+        "http://127.0.0.1:4173/*"
+      ],
+      "js": ["bridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
